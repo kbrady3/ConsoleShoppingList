@@ -6,8 +6,16 @@
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://cis175.cad2fmvb4ptt.us-east-1.rds.amazonaws.com/shopping"/>
-            <property name="javax.persistence.jdbc.user" value=""/>
-            <property name="javax.persistence.jdbc.password" value=""/>
+
+		</properties>
+	</persistence-unit>
+	<persistence-unit name="UserShoppingLists" transaction-type="RESOURCE_LOCAL">
+	<class>model.Shopper</class>
+	<class>model.ListDetails</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://cis175.cad2fmvb4ptt.us-east-1.rds.amazonaws.com/shopping"/>
+
 		</properties>
 	</persistence-unit>
 </persistence>
