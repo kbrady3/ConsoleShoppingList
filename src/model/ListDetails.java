@@ -33,7 +33,7 @@ public class ListDetails {
 	@OneToMany(cascade=CascadeType.PERSIST, fetch=FetchType.EAGER)
 	@JoinTable
 	  (
-	      name="ITEMS_ON_LIST",
+	      name="items_on_list",
 	      joinColumns={ @JoinColumn(name="LIST_ID", referencedColumnName="LIST_ID") },
 	      inverseJoinColumns={ @JoinColumn(name="ITEM_ID", referencedColumnName="ID", unique=true) }
 	  )
